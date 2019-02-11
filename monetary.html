@@ -11860,7 +11860,7 @@ $( document ).ready(function(){
 <h1 id="&#24341;&#23376;">&#24341;&#23376;<a class="anchor-link" href="#&#24341;&#23376;">&#182;</a></h1><ul>
 <li>I can't influence the monetary policy and I have no interest in it either. 我影响不了货币政策，我也完全对货币不感兴趣<ul>
 <li>利率(interest rate)，存款准备金利率(reserve ratio)，通货膨胀(inflation), 失业率(unemployement rate)</li>
-<li>汇率(exchange rate), 对冲基金(hedge fund)</li>
+<li>汇率贬值(exchange rate depreciation), 日本亚马逊购物，对冲基金(hedge fund)</li>
 </ul>
 </li>
 <li>Money had no "real" effect on the economy? 经济真实的一面和货币无关？</li>
@@ -11875,7 +11875,16 @@ $( document ).ready(function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table><tr><td><img src='img/book1.PNG'></td><td><img src='img/book2.PNG'></td></tr></table>
+<h1 id="Main-References">Main References<a class="anchor-link" href="#Main-References">&#182;</a></h1><table><tr><td><img src='img/book1.PNG'></td><td><img src='img/book2.PNG'></td></tr></table>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Outline">Outline<a class="anchor-link" href="#Outline">&#182;</a></h1><h2 id="Why">Why<a class="anchor-link" href="#Why">&#182;</a></h2><h2 id="What">What<a class="anchor-link" href="#What">&#182;</a></h2><h2 id="How">How<a class="anchor-link" href="#How">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -11909,7 +11918,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">deposit</span> <span class="o">=</span> <span class="mi">1000</span>                           <span class="c1"># 存款</span>
@@ -11917,7 +11926,7 @@ $( document ).ready(function(){
 <span class="n">required_reserves</span> <span class="o">=</span> <span class="n">deposit</span> <span class="o">*</span> <span class="n">rr</span>         <span class="c1"># 法定准备金</span>
 <span class="c1"># A genometric series, sum(1-rr)^n = 1/(1-rr), 0&lt;rr&lt;1</span>
 <span class="c1"># 0.9^0 + 0.9^1 + 0.9^2 + 0.9^3 + ... + 0.9^n</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;n=2&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="o">*</span><span class="mf">0.9</span> <span class="o">+</span> <span class="mi">1000</span><span class="o">*</span><span class="mf">0.9</span><span class="o">*</span> <span class="mf">0.9</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;n=2&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="o">*</span><span class="mf">0.9</span> <span class="o">+</span> <span class="mi">1000</span><span class="o">*</span><span class="mf">0.9</span><span class="o">*</span><span class="mf">0.9</span><span class="p">)</span>
    
 <span class="n">n</span> <span class="o">=</span> <span class="mi">100</span>                                  <span class="c1"># transaction times 流动性                         </span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>                                    <span class="c1"># every term</span>
@@ -11968,10 +11977,14 @@ n=9, multiplier=6.5, total=6513.2
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#20056;&#25968;">&#20056;&#25968;<a class="anchor-link" href="#&#20056;&#25968;">&#182;</a></h1><ul>
-<li>货币乘数： 银行体系的贷款活动所创造的货币与政府的央行所创造的货币之比</li>
-<li>银行挤兑与银行假日</li>
-<li>M1 现金 （硬通货）活期账户余额</li>
+<h1 id="&#36135;&#24065;&#20056;&#25968;">&#36135;&#24065;&#20056;&#25968;<a class="anchor-link" href="#&#36135;&#24065;&#20056;&#25968;">&#182;</a></h1><ul>
+<li>货币乘数： 银行体系的贷款活动所创造的货币与政府的央行所创造的货币之比<ul>
+<li>银行不愿意放贷，担心偿还能力， post 2008</li>
+<li>银行挤兑 </li>
+</ul>
+</li>
+<li>M0 现金和准备金 - 硬通货</li>
+<li>M1 包括硬通货与活期存款</li>
 <li>M2 包括M1再加上比如定期存单，也可看作是经过“货币乘数”放大之后的货币量</li>
 </ul>
 
@@ -12005,7 +12018,7 @@ n=9, multiplier=6.5, total=6513.2
 <h1 id="Who-alters-the-amount-of-money">Who alters the amount of money<a class="anchor-link" href="#Who-alters-the-amount-of-money">&#182;</a></h1><ul>
 <li>Central bank or Federal Reserve 美国联邦储备委员会
 <img src='img/money01.PNG'>
-<a href="https://www.youtube.com/watch?v=PHe0bXAIuk0">https://www.youtube.com/watch?v=PHe0bXAIuk0</a> 2013 By Ray Dalio</li>
+From <a href="https://www.youtube.com/watch?v=PHe0bXAIuk0">https://www.youtube.com/watch?v=PHe0bXAIuk0</a> 2013 By Ray Dalio</li>
 </ul>
 
 </div>
@@ -12024,20 +12037,19 @@ n=9, multiplier=6.5, total=6513.2
 </li>
 <li>Discount window 贴现窗口</li>
 <li>Open market operation 公开市场操作<ul>
-<li>美联储购买债券，放更多贷款，创造货币</li>
-<li>售出债券，接受储备支付， 降低基础货币存量</li>
 <li>Contractionary monetary policy 紧缩性货币政策<ul>
 <li>减少货币供给给以降低总需求而采取的措施</li>
+<li>售出债券，接受储备支付， 降低基础货币存量</li>
 </ul>
 </li>
 <li>Expansionary monetary policy 扩张性货币政策<ul>
 <li>Maintains short-term interest rates at a lower than usual rate or increases the total supply of money</li>
+<li>美联储购买债券，放更多贷款，创造货币</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Federal funds rate 联邦基金利率与货币供给</li>
-<li>Quantitative easing 量化宽松 按计划直接增加货币供应量</li>
+<li>到达零利率的时候：Quantitative easing 量化宽松，按计划直接增加货币供应量</li>
 </ul>
 
 </div>
@@ -12057,7 +12069,7 @@ n=9, multiplier=6.5, total=6513.2
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -12150,10 +12162,10 @@ z
       <defs>
        <path d="M 0 0 
 L 0 3.5 
-" id="m4d8d1a5f77" style="stroke:#000000;stroke-width:0.8;"/>
+" id="ma0616a8c7d" style="stroke:#000000;stroke-width:0.8;"/>
       </defs>
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="20.41875" xlink:href="#m4d8d1a5f77" y="228.14"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="20.41875" xlink:href="#ma0616a8c7d" y="228.14"/>
       </g>
      </g>
      <g id="text_1">
@@ -12187,7 +12199,7 @@ Q 19.53125 74.21875 31.78125 74.21875
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="76.21875" xlink:href="#m4d8d1a5f77" y="228.14"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="76.21875" xlink:href="#ma0616a8c7d" y="228.14"/>
       </g>
      </g>
      <g id="text_2">
@@ -12215,7 +12227,7 @@ z
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="132.01875" xlink:href="#m4d8d1a5f77" y="228.14"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="132.01875" xlink:href="#ma0616a8c7d" y="228.14"/>
       </g>
      </g>
      <g id="text_3">
@@ -12253,7 +12265,7 @@ Q 31.109375 20.453125 19.1875 8.296875
     <g id="xtick_4">
      <g id="line2d_4">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="187.81875" xlink:href="#m4d8d1a5f77" y="228.14"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="187.81875" xlink:href="#ma0616a8c7d" y="228.14"/>
       </g>
      </g>
      <g id="text_4">
@@ -12299,7 +12311,7 @@ Q 46.96875 40.921875 40.578125 39.3125
     <g id="xtick_5">
      <g id="line2d_5">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="243.61875" xlink:href="#m4d8d1a5f77" y="228.14"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="243.61875" xlink:href="#ma0616a8c7d" y="228.14"/>
       </g>
      </g>
      <g id="text_5">
@@ -12331,7 +12343,7 @@ z
     <g id="xtick_6">
      <g id="line2d_6">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="299.41875" xlink:href="#m4d8d1a5f77" y="228.14"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="299.41875" xlink:href="#ma0616a8c7d" y="228.14"/>
       </g>
      </g>
      <g id="text_6">
@@ -12370,7 +12382,7 @@ z
     <g id="xtick_7">
      <g id="line2d_7">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="355.21875" xlink:href="#m4d8d1a5f77" y="228.14"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="355.21875" xlink:href="#ma0616a8c7d" y="228.14"/>
       </g>
      </g>
      <g id="text_7">
@@ -13337,7 +13349,7 @@ z
     </g>
    </g>
    <g id="LineCollection_1">
-    <path clip-path="url(#pdc5a824978)" d="M 414.260937 191.883775 
+    <path clip-path="url(#p166c323482)" d="M 414.260937 191.883775 
 L 403.691477 191.845519 
 L 391.691956 191.533939 
 L 381.146023 191.02905 
@@ -13391,37 +13403,37 @@ L 78.378962 -1
 " style="fill:none;stroke:#440154;stroke-width:1.5;"/>
    </g>
    <g id="line2d_8">
-    <path clip-path="url(#pdc5a824978)" d="M 104.11875 228.14 
+    <path clip-path="url(#p166c323482)" d="M 104.11875 228.14 
 L 104.11875 -1 
 L 104.11875 -1 
 " style="fill:none;stroke:#1f77b4;stroke-linecap:square;stroke-width:2;"/>
    </g>
    <g id="line2d_9">
-    <path clip-path="url(#pdc5a824978)" d="M 20.41875 61.360467 
+    <path clip-path="url(#p166c323482)" d="M 20.41875 61.360467 
 L 103.56075 61.360467 
 L 103.56075 61.360467 
 " style="fill:none;stroke:#ff7f0e;stroke-dasharray:5.6,2.4;stroke-dashoffset:0;stroke-width:2;"/>
    </g>
    <g id="line2d_10">
-    <path clip-path="url(#pdc5a824978)" d="M 187.81875 228.14 
+    <path clip-path="url(#p166c323482)" d="M 187.81875 228.14 
 L 187.81875 -1 
 L 187.81875 -1 
 " style="fill:none;stroke:#2ca02c;stroke-linecap:square;stroke-width:2;"/>
    </g>
    <g id="line2d_11">
-    <path clip-path="url(#pdc5a824978)" d="M 20.41875 136.530207 
+    <path clip-path="url(#p166c323482)" d="M 20.41875 136.530207 
 L 187.26075 136.530207 
 L 187.26075 136.530207 
 " style="fill:none;stroke:#d62728;stroke-dasharray:5.6,2.4;stroke-dashoffset:0;stroke-width:2;"/>
    </g>
    <g id="line2d_12">
-    <path clip-path="url(#pdc5a824978)" d="M 271.51875 228.14 
+    <path clip-path="url(#p166c323482)" d="M 271.51875 228.14 
 L 271.51875 -1 
 L 271.51875 -1 
 " style="fill:none;stroke:#9467bd;stroke-linecap:square;stroke-width:2;"/>
    </g>
    <g id="line2d_13">
-    <path clip-path="url(#pdc5a824978)" d="M 20.41875 172.125864 
+    <path clip-path="url(#p166c323482)" d="M 20.41875 172.125864 
 L 270.96075 172.125864 
 L 270.96075 172.125864 
 " style="fill:none;stroke:#8c564b;stroke-dasharray:5.6,2.4;stroke-dashoffset:0;stroke-width:2;"/>
@@ -13812,7 +13824,7 @@ Q 14.796875 37.203125 14.796875 27.296875
   </g>
  </g>
  <defs>
-  <clipPath id="pdc5a824978">
+  <clipPath id="p166c323482">
    <rect height="217.44" width="334.8" x="20.41875" y="10.7"/>
   </clipPath>
  </defs>
@@ -13831,8 +13843,13 @@ Q 14.796875 37.203125 14.796875 27.296875
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://fred.stlouisfed.org/series/BASE">https://fred.stlouisfed.org/series/BASE</a></p>
-<p><img src='img/base.PNG'></p>
+<p><a href="https://fred.stlouisfed.org/series/BASE">https://fred.stlouisfed.org/series/BASE</a>
+2011 年货币总量是危机时刻的3x，量化宽松的实例
+<img src='img/m0.PNG'>
+<a href="https://fred.stlouisfed.org/series/M1">https://fred.stlouisfed.org/series/M1</a>
+<img src='img/m1.PNG'>
+<a href="https://fred.stlouisfed.org/series/M2">https://fred.stlouisfed.org/series/M2</a>
+<img src='img/m2.PNG'></p>
 
 </div>
 </div>
@@ -13842,7 +13859,7 @@ Q 14.796875 37.203125 14.796875 27.296875
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src='img/money02.png'></p>
+<h1 id="&#32654;&#32852;&#20648;2008&#24180;&#20061;&#26376;&#22686;&#21457;&#20102;&#32422;1.5-&#19975;&#20159;&#32654;&#20803;&#30340;&#36135;&#24065;">&#32654;&#32852;&#20648;2008&#24180;&#20061;&#26376;&#22686;&#21457;&#20102;&#32422;1.5 &#19975;&#20159;&#32654;&#20803;&#30340;&#36135;&#24065;<a class="anchor-link" href="#&#32654;&#32852;&#20648;2008&#24180;&#20061;&#26376;&#22686;&#21457;&#20102;&#32422;1.5-&#19975;&#20159;&#32654;&#20803;&#30340;&#36135;&#24065;">&#182;</a></h1><p><img src='img/money02.png'></p>
 
 </div>
 </div>
@@ -13878,6 +13895,22 @@ Q 14.796875 37.203125 14.796875 27.296875
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#39640;&#20648;&#33988;&#29575;&#65292;&#39640;&#22806;&#27719;&#20648;&#22791;&#19968;&#23450;&#22909;&#20040;&#65311;">&#39640;&#20648;&#33988;&#29575;&#65292;&#39640;&#22806;&#27719;&#20648;&#22791;&#19968;&#23450;&#22909;&#20040;&#65311;<a class="anchor-link" href="#&#39640;&#20648;&#33988;&#29575;&#65292;&#39640;&#22806;&#27719;&#20648;&#22791;&#19968;&#23450;&#22909;&#20040;&#65311;">&#182;</a></h1><ul>
+<li>中国拥有大量美国债券，i.e. investing in US economy<ul>
+<li>低利率，资本流出投资海外</li>
+</ul>
+</li>
+<li>进口商品价格昂贵</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="&#22871;&#21033;&#65306;-&#21033;&#29992;&#20840;&#29699;&#21508;&#22320;&#27719;&#29575;&#30340;&#24046;&#24322;">&#22871;&#21033;&#65306; &#21033;&#29992;&#20840;&#29699;&#21508;&#22320;&#27719;&#29575;&#30340;&#24046;&#24322;<a class="anchor-link" href="#&#22871;&#21033;&#65306;-&#21033;&#29992;&#20840;&#29699;&#21508;&#22320;&#27719;&#29575;&#30340;&#24046;&#24322;">&#182;</a></h1><ul>
 <li>在墨西哥外汇市场将美元兑换成墨西哥比索</li>
 <li>在中国外汇市场将比索换成元</li>
@@ -13901,6 +13934,7 @@ Q 14.796875 37.203125 14.796875 27.296875
 </ul>
 </li>
 <li>1997由泰铢贬值引发的金融危机</li>
+<li>货币战争</li>
 </ul>
 
 </div>
@@ -13911,18 +13945,24 @@ Q 14.796875 37.203125 14.796875 27.296875
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Inflation">Inflation<a class="anchor-link" href="#Inflation">&#182;</a></h1><ul>
-<li>Three elements to explain the inflation<ul>
-<li>The price of imports<ul>
-<li>Balance of supply and demand globally traded goods (oil price)</li>
-</ul>
+<h1 id="All-comes-in-cycles">All comes in cycles<a class="anchor-link" href="#All-comes-in-cycles">&#182;</a></h1><p><img src='img/debt1.PNG'>
+From BIG DEBT CRISES by RAY DALIO， <a href="https://www.principles.com/big-debt-crises/">https://www.principles.com/big-debt-crises/</a></p>
+<p>debt service 债务清偿, 消费者必须清偿的债务支出，通常用它占可支配收入的比重表示</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Messages-from-those-cycles---Ray-Dalio">Messages from those cycles - Ray Dalio<a class="anchor-link" href="#Messages-from-those-cycles---Ray-Dalio">&#182;</a></h1><ul>
+<li><p>"Don't have debt rise faster than income</p>
 </li>
-<li>The public’s expectations</li>
-<li>Capacity pressure (or “slack”) in the domestic economy<ul>
-<li>The unemployment rate, a measure labour market slack</li>
-</ul>
+<li><p>Don't have income rise faster than productivity</p>
 </li>
-</ul>
+<li><p>Do all that you can to raise your productivity"</p>
 </li>
 </ul>
 
@@ -13934,23 +13974,7 @@ Q 14.796875 37.203125 14.796875 27.296875
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Philips-Curve">Philips Curve<a class="anchor-link" href="#Philips-Curve">&#182;</a></h1><ul>
-<li>Model of the unemployment and inflation<ul>
-<li>失业率较高，低通胀 (通胀inflation反映价格增加的速度 how fast prices increase)
-<img src='img/20171104_WOC123.png'></li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Further-Reading---&#20570;&#36873;&#25321;&#30340;&#38382;&#39064;">Further Reading - &#20570;&#36873;&#25321;&#30340;&#38382;&#39064;<a class="anchor-link" href="#Further-Reading---&#20570;&#36873;&#25321;&#30340;&#38382;&#39064;">&#182;</a></h1><ul>
+<h1 id="Further-Reading---&#23398;&#20064;&#32463;&#27982;&#23398;&#65292;&#20570;&#36873;&#25321;&#30340;&#38382;&#39064;">Further Reading - &#23398;&#20064;&#32463;&#27982;&#23398;&#65292;&#20570;&#36873;&#25321;&#30340;&#38382;&#39064;<a class="anchor-link" href="#Further-Reading---&#23398;&#20064;&#32463;&#27982;&#23398;&#65292;&#20570;&#36873;&#25321;&#30340;&#38382;&#39064;">&#182;</a></h1><ul>
 <li>想得到什么，什么是限制约束条件？<ul>
 <li>scarcity 稀缺性 我们想要的超过我们可以得到的资源</li>
 </ul>
@@ -13974,27 +13998,6 @@ Q 14.796875 37.203125 14.796875 27.296875
 </li>
 </ul>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="All-comes-in-cycles">All comes in cycles<a class="anchor-link" href="#All-comes-in-cycles">&#182;</a></h1><p><img src='img/debt1.PNG'>
-From BIG DEBT CRISES by RAY DALIO</p>
-<p>debt service 债务清偿, 消费者必须清偿的债务支出，通常用它占可支配收入的比重表示</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Messages-from-those-cycles">Messages from those cycles<a class="anchor-link" href="#Messages-from-those-cycles">&#182;</a></h1><h2 id="Don't-have-debt-rise-faster-than-income">Don't have debt rise faster than income<a class="anchor-link" href="#Don't-have-debt-rise-faster-than-income">&#182;</a></h2><h2 id="Don't-have-income-rise-faster-than-productivity">Don't have income rise faster than productivity<a class="anchor-link" href="#Don't-have-income-rise-faster-than-productivity">&#182;</a></h2><h2 id="Do-all-that-you-can-to-raise-your-productivity">Do all that you can to raise your productivity<a class="anchor-link" href="#Do-all-that-you-can-to-raise-your-productivity">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14027,21 +14030,54 @@ From BIG DEBT CRISES by RAY DALIO</p>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>[NbConvertApp] Converting notebook monetary.ipynb to html_with_toclenvs
-[NbConvertApp] Writing 336295 bytes to monetary.html
-</pre>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Back-up-some-other-interesting-points">Back up some other interesting points<a class="anchor-link" href="#Back-up-some-other-interesting-points">&#182;</a></h1>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Philips-Curve">Philips Curve<a class="anchor-link" href="#Philips-Curve">&#182;</a></h1><ul>
+<li>Model of the unemployment and inflation<ul>
+<li>失业率较高，低通胀 (通胀inflation反映价格增加的速度 how fast prices increase)
+<img src='img/20171104_WOC123.png'></li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Inflation">Inflation<a class="anchor-link" href="#Inflation">&#182;</a></h1><ul>
+<li>Three elements to explain the inflation<ul>
+<li>The price of imports<ul>
+<li>Balance of supply and demand globally traded goods (oil price)</li>
+</ul>
+</li>
+<li>The public’s expectations</li>
+<li>Capacity pressure (or “slack”) in the domestic economy<ul>
+<li>The unemployment rate, a measure labour market slack</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
+</div>
+</div>
 </div>
     </div>
   </div>
